@@ -5,6 +5,6 @@ object Main {
     println("scalaz-depend")
   }
 
-  val f
+  val f: Int => String = _ => "abc"
 }
 
