@@ -6,5 +6,6 @@ src_managed
 target
 classes
 .idea/workspace.xml
+.idea/ant.xml
 .DS_Store
 *~
