@@ -46,6 +46,7 @@ class ScalazDepend(info: ProjectInfo) extends ProguardProject(info) {
     "-dontoptimize"
   , "-dontobfuscate"
   , proguardKeepAllScala
+  , proguardKeepLimitedSerializability
   , "-keep interface scala.ScalaObject"
   , "-keep class ch.epfl.** { *; }"
   , "-keepclasseswithmembers public class * { public static void main(java.lang.String[]); }"
