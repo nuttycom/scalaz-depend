@@ -43,11 +43,7 @@ class ScalazDepend(info: ProjectInfo) extends ProguardProject(info) {
   )
   
   override def proguardOptions = List(
-    "-dontoptimize"
-  , "-dontobfuscate"
-  , proguardKeepAllScala
-  , proguardKeepLimitedSerializability
-  , "-keep interface scala.ScalaObject"
+    "-keep interface scala.ScalaObject"
   , "-keep class ch.epfl.** { *; }"
   , "-keepclasseswithmembers public class * { public static void main(java.lang.String[]); }"
   )
