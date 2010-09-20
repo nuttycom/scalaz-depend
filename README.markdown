@@ -1,0 +1,1 @@
+Scalaz depend
