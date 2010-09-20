@@ -30,9 +30,9 @@ class ScalazDepend(info: ProjectInfo) extends ProguardProject(info) {
 
   val docsArtifact = Artifact(artifactID, "docs", "jar", Some("javadoc"), Nil, None)
 
-  val specs = "org.scala-tools.testing" %% "specs" % "1.6.5-SNAPSHOT" % "test" withSources
+  val specs = "org.scala-tools.testing" %% "specs" % "1.6.5-SNAPSHOT" withSources
 
-  val scalacheck = "org.scala-tools.testing" %% "scalacheck" % "1.8-SNAPSHOT"
+  val scalacheck = "org.scala-tools.testing" %% "scalacheck" % "1.8-SNAPSHOT" withSources
 
   override def compileOptions = super.compileOptions ++ Seq(Unchecked)
 
@@ -48,6 +48,7 @@ class ScalazDepend(info: ProjectInfo) extends ProguardProject(info) {
   , proguardKeepAllScala
   , "-keep interface scala.ScalaObject"
   , "-keep class ch.epfl.** { *; }"
+  , "-keepclasseswithmembers public class * { public static void main(java.lang.String[]); }"
   )
 }
 

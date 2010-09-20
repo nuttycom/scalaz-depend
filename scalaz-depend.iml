@@ -31,19 +31,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/project/boot/scala-2.8.0/lib/scala-library.jar!/" />
-          <root url="jar://$MODULE_DIR$/project/boot/scala-2.8.0/lib/scala-compiler.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$MODULE_DIR$/project/boot/scala-2.8.0/lib/scala-library-sources.jar!/" />
-          <root url="jar://$MODULE_DIR$/project/boot/scala-2.8.0/lib/scala-compiler-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="Scala 2.8.0">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/project/boot/scala-2.8.0/lib/scala-library.jar!/" />
@@ -64,6 +51,20 @@
         </CLASSES>
         <JAVADOC />
         <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Testing">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.0/compile/jar/scalacheck_2.8.0-1.8-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.0/compile/jar/specs_2.8.0-1.6.5-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.0/compile/jar/test-interface-0.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.0/compile/src/specs_2.8.0-1.6.5-SNAPSHOT-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib_managed/scala_2.8.0/compile/src/scalacheck_2.8.0-1.8-SNAPSHOT-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
   </component>
