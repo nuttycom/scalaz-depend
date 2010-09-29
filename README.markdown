@@ -1,4 +1,4 @@
-Scalaz depend is an example of a project which depends on Scalaz
+**scalaz-depend** is an example of a project which depends on Scalaz
 
 ### Goal
 
