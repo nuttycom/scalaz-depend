@@ -13,4 +13,3 @@ object Main {
 
   val f: Int => String = _ => "abc"
 }
-

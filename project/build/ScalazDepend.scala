@@ -2,7 +2,7 @@ import sbt._
 import java.util.jar.Attributes.Name._
 
 
-class ScalazDepend(info: ProjectInfo) extends ProguardProject(info) {
+class ScalazDepend(info: ProjectInfo) extends DefaultProject(info) with ProguardProject {
   val scalaToolsSnapshots = "Scala Tools Snapshots" at "http://scala-tools.org/repo-snapshots/"
 
   override def packageOptions =
@@ -47,5 +47,7 @@ class ScalazDepend(info: ProjectInfo) extends ProguardProject(info) {
   , "-keep class ch.epfl.** { *; }"
   , "-keepclasseswithmembers public class * { public static void main(java.lang.String[]); }"
   )
-}
 
+  override def proguardLibraryJars =
+      super.proguardLibraryJars +++ scalaLibraryPath
+}

@@ -47,7 +47,7 @@
       <library name="Proguard 4.4">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/project/plugins/lib_managed/scala_2.7.7/proguard-4.4.jar!/" />
-          <root url="jar://$MODULE_DIR$/project/plugins/lib_managed/scala_2.7.7/sbt-proguard-plugin-0.0.2.jar!/" />
+          <root url="jar://$MODULE_DIR$/project/plugins/lib_managed/scala_2.7.7/sbt-proguard-plugin-0.0.5.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
