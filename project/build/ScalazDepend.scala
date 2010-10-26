@@ -38,16 +38,11 @@ class ScalazDepend(info: ProjectInfo) extends DefaultProject(info) with Proguard
 
   override def allDependencyJars = (
     super.allDependencyJars +++
-    Path.fromFile(buildScalaInstance.compilerJar) +++
     Path.fromFile(buildScalaInstance.libraryJar)
   )
   
   override def proguardOptions = List(
     "-keep interface scala.ScalaObject"
-  , "-keep class ch.epfl.** { *; }"
   , "-keepclasseswithmembers public class * { public static void main(java.lang.String[]); }"
   )
-
-  override def proguardLibraryJars =
-      super.proguardLibraryJars +++ scalaLibraryPath
 }
